@@ -43,8 +43,9 @@ const fifthAnswer = "2022"
 
 numberOfQuestions = 5;
 rank = 0;
-playerRank;
-message = `You got ${rank} out of ${numberOfQuestions} correct.`;
+let playerRank;
+message = `You got ${rank} out of ${numberOfQuestions} correct.
+Your Rank: ${playerRank}`;
 
 
 if ( firstResponse = firstAnswer) {
@@ -64,13 +65,13 @@ if ( fifthResponse = fifthAnswer) {
 } 
 
 if (rank = 5) {
-    playerRank = "Gold"
-} else if (rank = 4 || 3){
-    playerRank = "Silver"
-} else if (rank = 2 || 1){
-    playerRank = "Bronze"
+    playerRank === "Gold"
+} else if (rank === 4 || 3){
+    playerRank === "Silver"
+} else if (rank === 2 || 1){
+    playerRank === "Bronze"
 } else {
-    playerRank = "No Crown"
+    playerRank === "No Crown"
 }
 
-document.querySelector('main') = message;
+total = document.querySelector("main").innerHTML = message;
