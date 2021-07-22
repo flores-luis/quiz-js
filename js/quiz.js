@@ -29,11 +29,31 @@
 
 // 6. Output results to the <main> element
 
-let firstResponse = prompt("What is the color of the ocean?")
-let secondResponse = prompt("What is 2 x 2?")
-let thirdResponse = prompt("What shape is a window?")
-let fourthResponse = prompt("What country is California in?")
-let fifthResponse = prompt("What is the next year?")
+//First Quiz question
+const firstResponse = prompt("What is the color of the ocean?");
+if ( firstResponse = "blue") {
+    rank += 1;
+}
+//Second Quiz question
+const secondResponse = prompt("What is 2 x 2?");
+if ( secondResponse = 4) {
+    rank += 1;
+} 
+//Third Quiz question
+const thirdResponse = prompt("What shape is a window?");
+if ( thirdResponse = "square") {
+    rank += 1;
+} 
+//Fourth Quiz question
+const fourthResponse = prompt("What country is California in?");
+if ( fourthResponse = "United States") {
+    rank += 1;
+} 
+//Fifth Quiz question
+const fifthResponse = prompt("What is the next year?");
+if ( fifthResponse = fifthAnswer) {
+    rank += 1;
+} 
 
 const firstAnswer = "blue"
 const secondAnswer = 4
@@ -42,27 +62,14 @@ const fourthAnswer = "United States"
 const fifthAnswer = "2022"
 
 numberOfQuestions = 5;
-rank = 0;
+let rank = 0;
 let playerRank;
 message = `You got ${rank} out of ${numberOfQuestions} correct.
 Your Rank: ${playerRank}`;
 
 
-if ( firstResponse = firstAnswer) {
-    rank += 1;
-} 
-if ( secondResponse = secondAnswer) {
-    rank += 1;
-} 
-if ( thirdResponse = thirdAnswer) {
-    rank += 1;
-} 
-if ( fourthResponse = fourthAnswer) {
-    rank += 1;
-} 
-if ( fifthResponse = fifthAnswer) {
-    rank += 1;
-} 
+
+
 
 if (rank = 5) {
     playerRank === "Gold"
