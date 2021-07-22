@@ -32,45 +32,46 @@
 //Declared variables
 let rank = 0;
 let playerRank;
-message = `You got ${rank} out of ${numberOfQuestions} correct.
-Your Rank: ${playerRank}`;
-
+const main = document.querySelector('main');
 
 //First Quiz question
 const firstResponse = prompt("What is the color of the ocean?");
-if ( firstResponse = "blue") {
+if ( firstResponse === "blue") {
     rank += 1;
 }
 //Second Quiz question
 const secondResponse = prompt("What is 2 x 2?");
-if ( secondResponse = 4) {
+if ( secondResponse === '4') {
     rank += 1;
 } 
 //Third Quiz question
 const thirdResponse = prompt("What shape is a window?");
-if ( thirdResponse = "square") {
+if ( thirdResponse === "square") {
     rank += 1;
 } 
 //Fourth Quiz question
 const fourthResponse = prompt("What country is California in?");
-if ( fourthResponse = "United States") {
+if ( fourthResponse === "United States") {
     rank += 1;
 } 
 //Fifth Quiz question
 const fifthResponse = prompt("What is the next year?");
-if ( fifthResponse = fifthAnswer) {
+if ( fifthResponse === '2022') {
     rank += 1;
 } 
 
 //Second Conditional Statement that compares variables rank & playerRank
-if (rank = 5) {
-    playerRank === "Gold"
-} else if (rank === 4 || 3){
-    playerRank === "Silver"
-} else if (rank === 2 || 1){
-    playerRank === "Bronze"
+if (rank === 5) {
+    playerRank = "Gold";
+} else if (rank >= 3){
+    playerRank = "Silver";
+} else if (rank >= 1){
+    playerRank = "Bronze";
 } else {
-    playerRank === "No Crown"
+    playerRank = "No Crown";
 }
 
-total = document.querySelector("main").innerHTML = message;
+main.innerHTML = `
+    <h1>You got ${rank} out of 5 questions correct!</h1>
+    <h2>Crown earned: ${playerRank}</h2>
+`;
