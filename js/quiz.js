@@ -55,12 +55,6 @@ if ( fifthResponse = fifthAnswer) {
     rank += 1;
 } 
 
-const firstAnswer = "blue"
-const secondAnswer = 4
-const thirdAnswer = "square"
-const fourthAnswer = "United States"
-const fifthAnswer = "2022"
-
 numberOfQuestions = 5;
 let rank = 0;
 let playerRank;
