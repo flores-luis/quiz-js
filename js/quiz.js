@@ -29,6 +29,13 @@
 
 // 6. Output results to the <main> element
 
+//Declared variables
+let rank = 0;
+let playerRank;
+message = `You got ${rank} out of ${numberOfQuestions} correct.
+Your Rank: ${playerRank}`;
+
+
 //First Quiz question
 const firstResponse = prompt("What is the color of the ocean?");
 if ( firstResponse = "blue") {
@@ -55,16 +62,7 @@ if ( fifthResponse = fifthAnswer) {
     rank += 1;
 } 
 
-numberOfQuestions = 5;
-let rank = 0;
-let playerRank;
-message = `You got ${rank} out of ${numberOfQuestions} correct.
-Your Rank: ${playerRank}`;
-
-
-
-
-
+//Second Conditional Statement that compares variables rank & playerRank
 if (rank = 5) {
     playerRank === "Gold"
 } else if (rank === 4 || 3){
